@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68b2af02ca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="1port.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h2>Hi, I'm <span>Karthik Darapu</span><br>Computer Science Student, Developer <br>and an Avid Learner
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="2port.jpeg" class="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a computer science undergrad, pursuing a Bachelor of Technology in computer science engineering from Sreenidhi Institute of Science and Technology. I want to use technology for social good and look forward to creating a meaningful change through technology. I’m proficient in C/C++,Frontend Tehnologies, complemented by expertise in software engineering, database management, and internet of things.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C,C++,Java,Python</li>
+                            <li><span>Frontend Development</span><br>HTML,CSS,Javascript</li>
+                            <li><span>Tools/Platorms</span><br>VS code, Web, Windows, Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                            <li><span>Web Development Apprenticeship</span><br>Coign</li>
+                            <li><span>Documentation Head</span><br>Civil Services Aspirants Club</li>
+                            <li><span>Treasurer</span><br>The Literary Club</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B.Tech from Sreenidhi Institute of Science and Technology</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>From pixels to passion, I'm on a journey to weave visually stunning websites that tell compelling stories. 
+                        Ready to embrace every line of code as a brushstroke in the art of web creation!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Research and Analysis</h2>
+                    <p>Research isn't just my interest; it's my playground of curiosity. 
+                        I thrive on unraveling mysteries, connecting dots, and turning the ordinary into extraordinary. Every inquiry is a step into the captivating dance of exploration.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                                <div class="work">
+                    <img src="3port.jpeg">
+                    <div class="layer">
+                        <h3>Weather&Forecast</h3>
+                        <p> 
+                            The application delivers real-time temperature, wind speed, humidity, and local time information for a specified location using weather APIs and geolocation data, 
+                            based on user-inputted location name or coordinates.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="3port.jpeg">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p> A simplest calculator..fun and fingertip calculations .</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--contact-->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1> 
+                <p><i class="fa-solid fa-envelope"></i>karthikdarapu0703@gmail.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-slack"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                   <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+                </div>
+            <div class="contact-right">
+                    <form>
+                       <input type="text" name="Name" placeholder="Your Name" required>
+                       <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+            </div>
+ <script>
+ var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname)
+{
+
+    for(tablink of tablinks)
+    {
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents)
+    {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+    <script>
+        var sideme=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sideme.style.right="0";
+        }
+        function closemenu()
+        {
+            sideme.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
